@@ -5,18 +5,23 @@ import {StartComponent} from "./start/start.component";
 import { HeaderComponent } from './header/header.component'
 import {MatButtonModule} from '@angular/material/button';
 import { MainComponent } from './main/main.component';
+import { BooksComponent } from './books/books.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
   declarations: [
     StartComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [StartComponent]

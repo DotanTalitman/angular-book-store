@@ -1,0 +1,7 @@
+
+<button  (click)="getData()">get Books</button>
+<ul>
+  <li *ngFor="let book of booksList">
+    <a [href]="book.link">{{book.title}}</a>
+  </li>
+</ul>
